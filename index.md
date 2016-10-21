@@ -14,10 +14,10 @@ knit        : slidify::knit2slides
 
 <style>
 
-#io2012-toc .nav-pills > .active > a{
-  background-color: darkslategray;
-  color: #000000;
-}
+<!-- #io2012-toc .nav-pills > .active > a{ -->
+<!--   background-color: darkslategray; -->
+<!--   color: #000000; -->
+<!-- } -->
 
 
 .title-slide {
