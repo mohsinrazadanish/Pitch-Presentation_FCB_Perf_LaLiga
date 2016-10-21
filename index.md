@@ -183,9 +183,9 @@ article p, article li, article li.build, section p, section li{
 |   5    |   Sevilla FC    |   Sevilla FC    | Athletic Bilbao |
 |   6    |  Villarreal CF  |  Villarreal CF  |   Celta Vigo    |
 
-<font size = 3> <br> **Shiny App:** Follow the link to use the app: <a href ="https://mohsinraza.shinyapps.io/shiny_app2/"> **FC Barca Performance in La Liga** </a> <br> </font>
-<font size = 3> **Source Code and Documentation (Shiny App):** Follow the link to use the app: <a href ="https://mohsinraza.shinyapps.io/shiny_app2/"> **Source code** </a> <br> </font>
-<font size = 3> **Source Code (Pitch Presentation):** Follow the link to use the app: <a href ="https://mohsinraza.shinyapps.io/shiny_app2/"> **Source code** </a> <br> </font>
+<font size = 3> <br>To use the **Shiny App**, follow the link: <a href ="https://mohsinraza.shinyapps.io/FCB_Performance_LaLiga/"> **Shiny App: FC Barca Performance in La Liga** </a> <br> </font>
+<font size = 3> For **Source Code and Documentation of the Shiny App**, follow the link: <a href ="https://github.com/mohsinrazadanish/FCB_Performance_LaLiga"> **Source code: FC Barca Performance in La Liga** </a> <br> </font>
+<font size = 3>For **Source Code of the Pitch Presentation**, follow the link: <a href = "https://github.com/mohsinrazadanish/Pitch-Presentation_FCB_Perf_LaLiga"> **Source code: Pitch Presentation for Shiny App 'FC Barca Performance in La Liga'** </a> <br> </font>
 
-<font size=3>**Note:** The background of the title slide is *FC Barca jersey*; that of user instruction is <font color=#4DBD33>**grass**</font> color, and for the rankings I chose <font color=#7F1734>**claret**</font> for the background for Blaugrana <br> </font>
+<font size=3>**Note:** The background of the title slide is *FC Barca jersey*; that of user instruction is <font color=#4DBD33>**grass**</font> color, and for the rankings I chose <font color=#7F1734>**claret**</font> for the background for Blaugrana. <br> </font>
 <font size=3> **Contact:** *For any comments or questions, please write to me at* **mohsinrazadanish@gmail.com** </font>
