@@ -14,24 +14,18 @@ knit        : slidify::knit2slides
 
 <style>
 
-#io2012-toc .nav-pills > .active > a{
-  background-color: darkslategray;
-  color: #000000;
-}
-
-
 .title-slide {
 
   background-image:url(assets/img/barca_shirt.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  <!-- title-color: #90FEFB; -->
-  color: #000000
-  /* background-color: #4DBD33; FC Barca blue: #00529F, FC Barca claret: #722F37, grass: #4DBD33, spring green:#00EE76 */
-  /* font-color: #00529F; */
   
 }
+
+  <!-- /* background-color: #4DBD33; FC Barca blue: #00529F, FC Barca claret: #722F37, grass: #4DBD33, spring green:#00EE76 */ -->
+  <!-- /* font-color: #00529F; */ -->
+
 
 .title-slide hgroup > h1{
   font-family: 'Oswald', sans-serif;
@@ -48,8 +42,6 @@ knit        : slidify::knit2slides
   color: #CCCCCC;
 }
 
-
-
 slide:not(.segue) h2{
   font-family: 'Calibri', Arial, sans-serif;
   font-size: 52px;
@@ -58,9 +50,6 @@ slide:not(.segue) h2{
   text-transform: normal;
   letter-spacing: -2px;
   line-height: 1.2em;
-/*  color: #193441;*/
-/*  color: #02574D;*/
-  <!-- color: #CC2904; -->
   color: #000000;
 }
 
@@ -74,9 +63,15 @@ article p, article li, article li.build, section p, section li{
   color: #000000;
 }
 
-
-
-
+slides > slide:not(.nobackground):after {
+  font-size: 12pt;  
+  content: attr(data-slide-num) "/" attr(data-total-slides);
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  line-height: 1.9;
+  color: #000000;
+}
 
 </style>
 
@@ -99,8 +94,7 @@ article p, article li, article li.build, section p, section li{
 
 <style>
 #custbg2 {
-  background-color: #4DBD33; /* FC Barca blue: #00529F, FC Barca claret: #722F37, grass: #4DBD33, spring green:#00EE76 */
-  <!-- font-color: #00529F; -->
+  background-color: #4DBD33;
 }
 
 #custbg2 h2{
@@ -127,7 +121,7 @@ article p, article li, article li.build, section p, section li{
 <style>
 
 #custbg3 {
-  background-color: #7F1734; /* FC Barca blue: #00529F, FC Barca claret: #7F1734 or #722F37, grass: #4DBD33, spring green:#00EE76 */
+  background-color: #7F1734;
 }
 
 #custbg3 h2{
@@ -164,8 +158,7 @@ article p, article li, article li.build, section p, section li{
 
 <style>
 #custbg4 {
-  background-color: #FFFFFF; /* FC Barca blue: #00529F, FC Barca claret: #722F37, grass: #4DBD33, spring green:#00EE76, tropical blue: #62B1F6, picasso blue: #0276FD */
-  /* font-color: #00529F; */
+  background-color: #FFFFFF;
 }
 
 </style>
