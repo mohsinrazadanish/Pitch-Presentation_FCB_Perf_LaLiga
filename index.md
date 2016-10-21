@@ -63,6 +63,16 @@ article p, article li, article li.build, section p, section li{
   color: #000000;
 }
 
+slides > slide:not(.nobackground):after {
+  font-size: 12pt;  
+  content: attr(data-slide-num) "/" attr(data-total-slides);
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  line-height: 1.9;
+  color: #000000;
+}
+
 </style>
 
 
