@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Project: Shiny Application and Reproducible Pitch</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Course Project: Shiny Application and Reproducible Pitch">
+  <meta name="author" content="Muhammad Mohsin Raza Danish">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+<link rel=stylesheet href="./assets/css/slidify.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Course Project: Shiny Application and Reproducible Pitch</h1>
+    <h2>FC Barcelona in La Liga during 2005-2015</h2>
+    <p>Muhammad Mohsin Raza Danish<br/>Data Science Trainee</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+
+#io2012-toc .nav-pills > .active > a{
+  background-color: darkslategray;
+  color: #000000;
+}
+
+
+.title-slide {
+
+  background-image:url(assets/img/barca_shirt.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  <!-- title-color: #90FEFB; -->
+  color: #000000
+  /* background-color: #4DBD33; FC Barca blue: #00529F, FC Barca claret: #722F37, grass: #4DBD33, spring green:#00EE76 */
+  /* font-color: #00529F; */
+  
+}
+
+.title-slide hgroup > h1{
+  font-family: 'Oswald', sans-serif;
+  color: #000000
+}
+
+.title-slide hgroup > h2{
+  font-family: 'Oswald', 'Calibri', sans-serif;
+  color: #000000;
+}
+
+.title-slide hgroup > p{
+  font-family: 'Oswald', 'Calibri', sans-serif;
+  color: #CCCCCC;
+}
+
+
+
+slide:not(.segue) h2{
+  font-family: 'Calibri', Arial, sans-serif;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: normal;
+  letter-spacing: -2px;
+  line-height: 1.2em;
+/*  color: #193441;*/
+/*  color: #02574D;*/
+  <!-- color: #CC2904; -->
+  color: #000000;
+}
+
+
+/* Fonts and Spacing */
+article p, article li, article li.build, section p, section li{
+  font-family: 'Open Sans','Helvetica', 'Crimson Text', 'Garamond',  'Palatino', sans-serif;
+  text-align: justify;
+  font-size:22px;
+  line-height: 1.5em;
+  color: #000000;
+}
+
+
+
+
+
+</style>
+
+<h2>FC Barcelona&#39;s performance in La Liga during 2005-2015</h2>
+
+<ul>
+<li>FC Barcelona is a top tier football team in Spanish football league, <strong>La Liga</strong>.</li>
+<li>The club is based in <strong>Barcelona</strong>, <strong>Catalonia</strong>, <strong>Spain</strong>.</li>
+<li>The <em>full name</em> of the club is <strong>Futbol Club Barcelona</strong> and <em>short name</em> is <strong>FCB</strong>.</li>
+<li>The <em>nicknames</em> are <strong>Barca</strong> or <strong>Blaugrana</strong>.</li>
+<li><strong>Red</strong> and <strong>blue</strong> have featured on the Barca shirt for <em>more than one hundred years</em> and the Club is widely known as the <em>Blaugrana</em> in reference to the names of these colours in the Catalan language.</li>
+<li>Their performance has been at the <em>top</em> in the last <em>10-11</em> years.</li>
+<li>The app shows a comparison between <em>FCB</em> and its <em>top competitors</em> in La Liga</li>
+<li><strong>Top Competitors:</strong>
+<em>Athletic Bilbao, Atletico Madrid, Real Madrid, Sevilla FC, Valencia CF</em></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="custbg2" style="background:;">
+  <article data-timings="">
+    <style>
+#custbg2 {
+  background-color: #4DBD33; /* FC Barca blue: #00529F, FC Barca claret: #722F37, grass: #4DBD33, spring green:#00EE76 */
+  <!-- font-color: #00529F; -->
+}
+
+#custbg2 h2{
+  color: #000000;
+
+}
+
+</style>
+
+<h2>User Instructions</h2>
+
+<ul>
+<li>There is a <strong>widget</strong> on the left that is used to input the <em>season</em>.</li>
+<li>On the right in the <strong>main panel</strong>, you see two tabs, one is for comparison with the top competitors and the other is for ranking table.</li>
+<li>In the <strong>Comparison tab</strong>, you see a plot that shows the goals difference of FC Barcelona with its top competitors during the given season.</li>
+<li>The goals difference for home games is shown with label <font color = "magenta"><strong>H</strong></font> in <em>magenta</em> color. </li>
+<li>The goals difference for away games is shown with label <font color = "blue"><strong>A</strong></font> in <em>blue</em> color.</li>
+<li>The <strong>horizontal line</strong> is at goals difference of zero. This line indicates the <em>drawn</em> games. </li>
+<li>The labels <strong>above</strong> the horizontal line at <em>y = 0</em> show the games that Barca <strong>won</strong> by the number of goals on the y-axis. </li>
+<li>The labels <strong>below</strong> the horizontal line at <em>y = 0</em> show the games that Barca <strong>lost</strong> by the number of goals shown on the y-axis.</li>
+<li>The <strong>Rankings tab</strong> shows the rankings of the La Liga for top 20 teams of the season.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="custbg3" style="background:;">
+  <article data-timings="">
+    <style>
+
+#custbg3 {
+  background-color: #7F1734; /* FC Barca blue: #00529F, FC Barca claret: #7F1734 or #722F37, grass: #4DBD33, spring green:#00EE76 */
+}
+
+#custbg3 h2{
+  color: #000000;
+}
+</style>
+
+<h2>Rankings (2005-2012)</h2>
+
+<table><thead>
+<tr>
+<th align="center">Rank</th>
+<th align="center">2005</th>
+<th align="center">2006</th>
+<th align="center">2007</th>
+<th align="center">2008</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">FC Barcelona</td>
+<td align="center">FC Barcelona</td>
+<td align="center">Real Madrid</td>
+<td align="center">FC Barcelona</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">Real Madrid</td>
+<td align="center">Real Madrid</td>
+<td align="center">Villarreal CF</td>
+<td align="center">Real Madrid</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">Valencia CF</td>
+<td align="center">Sevilla FC</td>
+<td align="center">FC Barcelona</td>
+<td align="center">Sevilla FC</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">Sevilla FC</td>
+<td align="center">Valencia CF</td>
+<td align="center">Sevilla FC</td>
+<td align="center">Atletico Madrid</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">CA Osasuna</td>
+<td align="center">Villarreal CF</td>
+<td align="center">Atletico Madrid</td>
+<td align="center">Villarreal CF</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">Celta Vigo</td>
+<td align="center">Real Zaragoza</td>
+<td align="center">Racing Santander</td>
+<td align="center">Valencia CF</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th align="center">Rank</th>
+<th align="center">2009</th>
+<th align="center">2010</th>
+<th align="center">2011</th>
+<th align="center">2012</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">FC Barcelona</td>
+<td align="center">FC Barcelona</td>
+<td align="center">Real Madrid</td>
+<td align="center">FC Barcelona</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">Real Madrid</td>
+<td align="center">Real Madrid</td>
+<td align="center">FC Barcelona</td>
+<td align="center">Real Madrid</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">Valencia CF</td>
+<td align="center">Valencia CF</td>
+<td align="center">Valencia CF</td>
+<td align="center">Atletico Madrid</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">Sevilla FC</td>
+<td align="center">Villarreal CF</td>
+<td align="center">Malaga CF</td>
+<td align="center">Real Sociedad</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">RCD Mallorca</td>
+<td align="center">Atletico Madrid</td>
+<td align="center">Atletico Madrid</td>
+<td align="center">Valencia CF</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">Getafe CF</td>
+<td align="center">Athletic Bilbao</td>
+<td align="center">Levante UD</td>
+<td align="center">Malaga CF</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="custbg4" style="background:;">
+  <article data-timings="">
+    <style>
+#custbg4 {
+  background-color: #FFFFFF; /* FC Barca blue: #00529F, FC Barca claret: #722F37, grass: #4DBD33, spring green:#00EE76, tropical blue: #62B1F6, picasso blue: #0276FD */
+  /* font-color: #00529F; */
+}
+
+</style>
+
+<h2>Rankings (2013-2015)</h2>
+
+<table><thead>
+<tr>
+<th align="center">Rank</th>
+<th align="center">2013</th>
+<th align="center">2014</th>
+<th align="center">2015</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">Atletico Madrid</td>
+<td align="center">FC Barcelona</td>
+<td align="center">FC Barcelona</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">FC Barcelona</td>
+<td align="center">Real Madrid</td>
+<td align="center">Real Madrid</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">Real Madrid</td>
+<td align="center">Atletico Madrid</td>
+<td align="center">Atletico Madrid</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">Athletic Bilbao</td>
+<td align="center">Valencia CF</td>
+<td align="center">Villarreal CF</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">Sevilla FC</td>
+<td align="center">Sevilla FC</td>
+<td align="center">Athletic Bilbao</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">Villarreal CF</td>
+<td align="center">Villarreal CF</td>
+<td align="center">Celta Vigo</td>
+</tr>
+</tbody></table>
+
+<p><font size = 3> <br> <strong>Shiny App:</strong> Follow the link to use the app: <a href ="https://mohsinraza.shinyapps.io/shiny_app2/"> <strong>FC Barca Performance in La Liga</strong> </a> <br> </font>
+<font size = 3> <strong>Source Code and Documentation (Shiny App):</strong> Follow the link to use the app: <a href ="https://mohsinraza.shinyapps.io/shiny_app2/"> <strong>Source code</strong> </a> <br> </font>
+<font size = 3> <strong>Source Code (Pitch Presentation):</strong> Follow the link to use the app: <a href ="https://mohsinraza.shinyapps.io/shiny_app2/"> <strong>Source code</strong> </a> <br> </font></p>
+
+<p><font size=3><strong>Note:</strong> The background of the title slide is <em>FC Barca jersey</em>; that of user instruction is <font color=#4DBD33><strong>grass</strong></font> color, and for the rankings I chose <font color=#7F1734><strong>claret</strong></font> for the background for Blaugrana <br> </font>
+<font size=3> <strong>Contact:</strong> <em>For any comments or questions, please write to me at</em> <strong><a href="mailto:mohsinrazadanish@gmail.com">mohsinrazadanish@gmail.com</a></strong> </font></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='NA'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='NA'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='NA'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
