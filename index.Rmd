@@ -20,10 +20,12 @@ knit        : slidify::knit2slides
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  /* background-color: #4DBD33; FC Barca blue: #00529F, FC Barca claret: #722F37, grass: #4DBD33, spring green:#00EE76 */
-  /* font-color: #00529F; */
   
 }
+
+  <!-- /* background-color: #4DBD33; FC Barca blue: #00529F, FC Barca claret: #722F37, grass: #4DBD33, spring green:#00EE76 */ -->
+  <!-- /* font-color: #00529F; */ -->
+
 
 .title-slide hgroup > h1{
   font-family: 'Oswald', sans-serif;
@@ -39,8 +41,6 @@ knit        : slidify::knit2slides
   font-family: 'Oswald', 'Calibri', sans-serif;
   color: #CCCCCC;
 }
-
-
 
 slide:not(.segue) h2{
   font-family: 'Calibri', Arial, sans-serif;
@@ -94,8 +94,7 @@ slides > slide:not(.nobackground):after {
 
 <style>
 #custbg2 {
-  background-color: #4DBD33; /* FC Barca blue: #00529F, FC Barca claret: #722F37, grass: #4DBD33, spring green:#00EE76 */
-  <!-- font-color: #00529F; -->
+  background-color: #4DBD33;
 }
 
 #custbg2 h2{
@@ -122,7 +121,7 @@ slides > slide:not(.nobackground):after {
 <style>
 
 #custbg3 {
-  background-color: #7F1734; /* FC Barca blue: #00529F, FC Barca claret: #7F1734 or #722F37, grass: #4DBD33, spring green:#00EE76 */
+  background-color: #7F1734;
 }
 
 #custbg3 h2{
@@ -172,8 +171,7 @@ pander(all_rankings[1:6,c(1,6:9)], style = 'rmarkdown', split.cells=Inf)
 
 <style>
 #custbg4 {
-  background-color: #FFFFFF; /* FC Barca blue: #00529F, FC Barca claret: #722F37, grass: #4DBD33, spring green:#00EE76, tropical blue: #62B1F6, picasso blue: #0276FD */
-  /* font-color: #00529F; */
+  background-color: #FFFFFF;
 }
 
 </style>
