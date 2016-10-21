@@ -14,20 +14,12 @@ knit        : slidify::knit2slides
 
 <style>
 
-<!-- #io2012-toc .nav-pills > .active > a{ -->
-<!--   background-color: darkslategray; -->
-<!--   color: #000000; -->
-<!-- } -->
-
-
 .title-slide {
 
   background-image:url(assets/img/barca_shirt.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  <!-- title-color: #90FEFB; -->
-  color: #000000
   /* background-color: #4DBD33; FC Barca blue: #00529F, FC Barca claret: #722F37, grass: #4DBD33, spring green:#00EE76 */
   /* font-color: #00529F; */
   
